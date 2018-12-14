@@ -1,0 +1,22 @@
+# development:
+#   host: dev.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+# staging:
+#   host: staging.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+# production:
+#   host: www.example.com
+#   email: john@doe.net
+#   password: apassword
+#   # api_key: <your api key here>
+#   # ssl: true
+
+local:
+  host: localhost:3000
+  handle: offering-possibility-millions
+  email: orbanbotond@gmail.com
+  api_key: 5a1c11ee41392da16b1eef92c538f29d8f9ff07b
