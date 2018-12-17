@@ -58,3 +58,8 @@ fields:
     required: false
     hint: Explanatory text displayed in the back office
     localized: false
+
+- category:
+    label: Category
+    type: string
+    required: true

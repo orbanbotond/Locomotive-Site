@@ -3,11 +3,28 @@ title: Events
 ---
 {% extends 'index' %}
 {% block content/main %}
-%p Here are the events
+
+{% with_scope category: 'Ruby' %}
+{% paginate contents.events by 2 %}
+
+%p There are {{paginate.total_entries}} events
 %ul
-{% for event in contents.events %}
+{% for event in paginate.collection %}
 %li
   %a{href:"{% path_to event %}"}
-    {{ event.title }} on:{{ event.event_date | localized_date: '%m/%d/%Y' }}
+    {{ event.title }} on: {{ event.event_date | localized_date: '%m/%d/%Y' }}
 {% endfor %}
+
+%div#pagination
+  {% if paginate.previous_page %}
+  %a{:href=>"?page={{paginate.previous_page}}"} Previous
+  {% endif %}
+  {% if paginate.next %}
+  %a{:href=>"?page={{ paginate.next_page }}"}Next
+  {% endif %}
+
+{% endpaginate %}
+
+{% endwith_scope %}
+
 {% endblock %}
