@@ -1,0 +1,30 @@
+{% extends 'index' %}
+
+{% block content/main %}
+  <ul>
+    {% for book in contents.books %}
+      <li>
+        Who wrote the book "{{ book.name }}"? {{ book.author.name }} did that!
+      </li>
+    {% endfor %}
+  </ul>
+  <ul>
+    {% for book in contents.authors.first.books %}
+      <li>
+        Who wrote the book "{{ book.name }}"? {{ book.author.name }} did that!
+      </li>
+    {% endfor %}
+  </ul>
+  <div>
+    <p>Violent Books</p>
+      {% with_scope tags: 'violence' %}
+        <ul>
+          {% for book in contents.books %}
+            <li>
+              Who wrote the book "{{ book.name }}"? {{ book.author.name }} did that!
+            </li>
+          {% endfor %}
+        </ul>
+      {% endwith_scope %}
+  </div>
+{% endblock %}
