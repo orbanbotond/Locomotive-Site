@@ -9,22 +9,35 @@ handle: home
 .row
   .col-lg-4
     {% editable_text first_column %}
-    %h2 Heading #1
-    %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    %h2 Projects
+    %p Here are our projects
     {% endeditable_text %}
+    %ul
+    {% for project in contents.projects %}
+    %li
+      {{ project.name }}
+    {% endfor %}
   .col-lg-4
     {% editable_text second_column %}
-    %h2 Heading #2
-    %p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+    %h2 Books
+    %p Here are our book offers
     {% endeditable_text %}
+    %ul
+    {% for book in contents.books %}
+    %li
+      {{ book.name }} by: {{ book.author.name }}
+    {% endfor %}
   .col-lg-4
+    %h2
+      %a{ href: "{% path_to events %}" }
+        Events
     {% editable_text third_column %}
-    %h2 Events
     %p Here are the events
     {% endeditable_text %}
     %ul
     {% for event in contents.events %}
     %li
-      {{ event.title }} on:{{ event.event_date | localized_date: '%m/%d/%Y' }}
+      %a{href:"{% path_to event %}"}
+        {{ event.title }} on: {{ event.event_date | localized_date: '%m/%d/%Y' }}
     {% endfor %}
 {% endblock %}
