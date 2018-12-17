@@ -1,16 +1,15 @@
-- "Conference":
-    description: "Et sit porro. Veritatis qui alias. Minus ipsum quo."
-    event_date: 2018/12/17 # YYYY/MM/DD
+- "RaisConf":
+    description: "Minneapolis, MN."
+    event_date: 2019/05/02 # YYYY/MM/DD
 
-- "Demo Party":
+- "RubyCon":
     description: "In ea facilis. Consequatur ut accusantium. Sint qui ducimus."
     event_date: 2018/12/17 # YYYY/MM/DD
 
-- "Yeiyy Party":
-    description: "Deleniti ut quaerat. Explicabo excepturi officiis. Eaque similique voluptatibus."
-    event_date: 2018/12/17 # YYYY/MM/DD
+- "EuRuKo":
+    description: "Rptterdam, the Netherlands"
+    event_date: 2019/06/21 # YYYY/MM/DD
 
-- "Home Dinner":
-    description: "Nesciunt repellendus commodi. Quas et similique. Rem excepturi perspiciatis."
-    event_date: 2018/12/17 # YYYY/MM/DD
-
+- "Ruby on Ice":
+    description: "Tegernsee, Germany"
+    event_date: 2019/02/22 # YYYY/MM/DD
