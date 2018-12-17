@@ -1,0 +1,13 @@
+---
+title: Events
+---
+{% extends 'index' %}
+{% block content/main %}
+%p Here are the events
+%ul
+{% for event in contents.events %}
+%li
+  %a{href:"{% path_to event %}"}
+    {{ event.title }} on:{{ event.event_date | localized_date: '%m/%d/%Y' }}
+{% endfor %}
+{% endblock %}
