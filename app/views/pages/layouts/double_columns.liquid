@@ -1,0 +1,17 @@
+---
+title: Double columns
+is_layout: true
+---
+{% extends layouts/default %}
+{% block main %}
+  <div class="left-column">
+     {% block left_column %}
+        {% editable_text content %}Lorem ipsum{% endeditable_text %}
+     {% endblock %}
+  </div>
+  <div class="right-column">
+     {% block right_column %}
+        {% editable_text content %}Lorem ipsum{% endeditable_text %}    
+     {% endblock %}
+  </div>
+{% endblock %}
