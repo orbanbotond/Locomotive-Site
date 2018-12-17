@@ -18,3 +18,8 @@
     description: "Quis nihil corrupti. Mollitia tempore similique. Accusantium dicta cumque."
     # image: /samples/projects/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
 
+- "Sample 5":
+    client: "Logic Optimum."
+    description: "My own project."
+    # image: /samples/projects/yourfile.txt # Path to a file in the public/samples folder or to a remote and external file.
+
