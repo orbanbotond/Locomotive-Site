@@ -16,7 +16,7 @@
 #   # ssl: true
 
 local:
-  host: localhost:3000
-  handle: offering-possibility-millions
+  host: http://localhost:3000
+  handle: logic-optimum
   email: orbanbotond@gmail.com
-  api_key: 5a1c11ee41392da16b1eef92c538f29d8f9ff07b
+  api_key: fed9ce79ce62a870d197aa34d115b517ea748208
